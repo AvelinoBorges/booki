@@ -434,10 +434,6 @@ nav ul li a:hover {
     }
 
     /* Search section */
-    .search-section {
-        margin: 0;
-    }
-    
     
     .search-section {
         padding: 0 20px;
@@ -505,44 +501,13 @@ nav ul li a:hover {
         color: var(--main-color);
     }
     /******************************************/
-
-    .info-text {
-        
-        margin-bottom: 0;
-
-    }
-    
-
-
     .hebergements-and-populaires {
         flex-direction: column-reverse;
 
     }
-
-
     
-    .hebergements-and-populaires section {
-        border-radius: 0px;
-      
-    }
-
     .hebergements {
         background-color: transparent !important;
-        border-radius: none;
 
     }
-
-    .populaires {
-        margin-top: 0px;
-    }
-
-    
-    .populaires-cards {
-        flex-direction: column;
-    }
-
-    .populaires-cards a {
-        width: 100%;
-    }
- 
 }
