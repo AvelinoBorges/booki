@@ -75,7 +75,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 79px;
 }
 
 .logo img {
@@ -85,6 +85,7 @@ header {
 nav ul {
     display: flex;
     list-style: none;
+    margin-top: 0px;
 }
 
 nav ul li {
@@ -92,7 +93,7 @@ nav ul li {
 }
 
 nav ul li a {
-    padding: 30px 0;
+    padding: 20px 0;
     border-top: 2px solid transparent;
 }
 
@@ -105,7 +106,7 @@ nav ul li a:hover {
 /****** section Search ***********/
 
 .search-section {
-    margin: 30px 0;
+    margin-top: 30px;
 }
 
 .search-section h1 {
@@ -146,6 +147,10 @@ nav ul li a:hover {
     font-size: 18px;
 }
 
+.search-bar input::placeholder {
+    color: black;
+}
+
 .search-button {
     height: 49px;
     padding: 0 16px;
@@ -168,7 +173,7 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     gap: 15px;
-    margin-bottom: 30px;
+    
 }
 
 .filter-title {
@@ -209,7 +214,7 @@ nav ul li a:hover {
     display: flex;
     align-items: center; /* Alinha verticalmente o ícone e o texto */
     gap: 10px; /* Espaçamento entre o ícone e o texto */
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5; /* Ajuste a altura da linha para melhorar o alinhamento */
@@ -333,6 +338,69 @@ nav ul li a:hover {
     margin-bottom: 5px;
 }
 
+/******* Fin section Populaires ***********/
+
+/****** Activities ***********/
+.activities {
+    padding: 30px;
+    margin-bottom: 35px;
+}
+
+.activities-title {
+    margin-bottom: 30px;
+}
+
+.activities-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.activities-cards a {
+    flex: 1 1 calc(25% - 23px);
+    min-width: 200px;
+}
+
+.activities-cards .card {
+    padding: 0;
+    height: 100%;
+}
+
+.activities-cards img {
+    height: 380px;
+    border-radius: 20px 20px 0 0;
+}
+
+.activities-cards .card-content {
+    padding: 0 20px;
+}
+
+
+/****** Footer ***********/
+footer {
+    background-color: var(--main-bg-color);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-column {
+    flex: 1; /* Cada coluna ocupa 1/3 do espaço disponível */
+}
+
+.footer-column h3 {
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.footer-column li {
+    margin-bottom: 15px;
+}
 
 
 
@@ -348,12 +416,6 @@ nav ul li a:hover {
     
     }
 
-
-
-
-
-    /****************************************/
-    /****************************************/
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -384,6 +446,22 @@ nav ul li a:hover {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activities-cards {
+        display: flex;
+        flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha */
+        gap: 15px; /* Espaçamento entre os cards */
+        justify-content: space-between; /* Distribui os cards uniformemente */
+    }
+
+    .activities-cards a {
+        flex: 1 1 calc(25% - 15px); /* Cada card ocupa 25% da largura menos o gap */
+        min-width: 200px; /* Define uma largura mínima */
+    }
+
+    .activities-cards img {
+        height: 200px; /* Ajusta a altura das imagens */
+    }
 }
 
 /* Small devices (phones, less than 768px) */
@@ -413,6 +491,7 @@ nav ul li a:hover {
         display: flex;
         width: 100%;
         padding:0;
+
     }
 
     nav ul li {
@@ -544,5 +623,25 @@ nav ul li a:hover {
     .populaires-cards a {
         width: 100%;
     }
- 
+
+    /** Activities */
+    .activities-cards {
+        display: flex;
+        flex-direction: column; /* Alinha os cards verticalmente */
+        gap: 15px; /* Espaçamento entre os cards */
+    }
+
+    .activities-cards a {
+        flex: 1 1 100%; /* Cada card ocupa 100% da largura */
+    }
+
+    .activities-cards img {
+        height: 140px; /* Ajusta a altura das imagens */
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 50px;
+    }
+    
 }
